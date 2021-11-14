@@ -1,14 +1,22 @@
 * {
-  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
 .contenedor-header {
   background: #f5f3ef;
   width: 100%;
   height: 50%;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .caja-logo {
   display: inline-block;
   width: 250px;
@@ -17,16 +25,12 @@
   margin-top: -40px;
 }
 
-.logo {
-  width: 100%;
-  height: 100%;
-}
-
 .nav-principal {
   display: inline-block;
-  width: 80%;
-  padding-left: 140px;
+  width: 100%;
+
   background: #f5f3ef;
+  border-top: 0.1rem solid #e1e1e1;
 }
 
 .nav-principal li {
@@ -48,40 +52,145 @@ li a:hover {
   color: #0648aa;
 }
 
-/* .contenedor-header {
-  border-bottom: 1px solid black;
-  align-items: center;
-  margin: 0 auto;
+/*Contenido Principal Home*/
+.contenedor-img {
+  background-image: url(../images/brooklyn-bridge-1791001_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
 }
 
-ul li {
-  list-style-type: none;
+.contenedor-img-principal {
   display: inline-block;
+  width: 30%;
+  height: 20%;
+  margin-top: 70px;
+  margin-left: 60px;
+}
+.contenedor-info {
+  display: inline-block;
+  width: 50%;
+  height: 40%;
+  line-height: 53px;
+  margin-left: 30px;
+  margin-bottom: 10;
 }
 
-.enlaces-nav {
-  display: inline-block;
-  list-style: none;
-  font-size: 15px;
-  padding: 32px;
-  color: black;
-  text-decoration: none;
-  padding-right: 15px;
+.contenedor-info h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+.contenedor-info p {
+  text-align: justify;
+}
+
+.parrafo-img {
+  margin-left: 10px;
+  font-weight: lighter;
   margin-top: 15px;
 }
-.logo {
-  border-radius: 45px;
-  width: 70px;
-  height: 70px;
-  margin-left: 5px;
-  margin-right: 5px;
+
+/*Bloque Frases*/
+.contenedor-img-fondo {
+  background-image: url(../images/san-francisco-1802015_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
 }
-.caja-titulo {
-  display: flex;
-  align-items: center;
-  justify-content: end;
+
+.seccion-categorias {
+  /* width: 80%; */
+  height: 40%;
+  margin-top: 30px;
+  margin-left: 28%;
+}
+.contenedor-img-frases {
+  display: inline-block;
+  width: 15%;
+  height: 10%;
+}
+.titulo-frases {
+  display: inline-block;
+  text-align: center;
+}
+.titulo-frases h2 {
+  padding-top: 10px;
+}
+.contenedor-form-frases {
+  /* display: inline-block; */
+  margin-top: 20px;
+}
+select {
+  width: 50%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
   font-size: 15px;
 }
-h1 {
-  font-size: 12px;
-} */
+
+.seccion-mostrar {
+  width: 100%;
+  height: 50%;
+  margin-top: 40px;
+}
+.seccion-mostrar p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.contenedor-audio {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.contenedor-listado {
+  display: inline-block;
+  width: 25%;
+  height: 30%;
+  margin-top: 10px;
+  border: 1px solid black;
+  background-color: #808080;
+}
+
+.contenedor-listado li {
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #032c69;
+}
+
+/*Footer*/
+
+footer {
+  /* background-color: #ebf4f5; */
+  background-color: #ccc8c0;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+footer h5 {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.contenedor-redes {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+footer a {
+  display: inline-block;
+  width: 10%;
+  height: 5%;
+  padding-bottom: 10px;
+}
+footer p {
+  text-align: center;
+}
