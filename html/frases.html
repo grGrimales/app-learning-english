@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Learning English</title>
     <link
       rel="shortcut icon"
-      href="../images/logo/logo.png"
+      href="../images/logo/logo-app.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
@@ -23,7 +29,7 @@
         <div class="caja-logo">
           <img
             class="logo"
-            src="../images/logo/logo.png"
+            src="../images/logo/logo-app.png"
             alt="Logo de la aplicación"
           />
         </div>
@@ -57,50 +63,60 @@
     </header>
 
     <main>
-      <div class="contenedor-img-fondo"></div>
       <section class="seccion-categorias">
-        <div class="contenedor-img-frases">
-          <img src="../images/imagen-frases.jpeg" alt="Dibujo pensativo" />
-        </div>
-        <div class="titulo-frases">
-          <h2>¿Que te gustaría escuchar hoy?</h2>
-        </div>
-        <div class="contenedor-form-frases">
-          <form action="">
-            <select name="Selecciona una categoría">
-              <option value="" selected>Selecciona una categoría</option>
-              <option value="saludos y despedidas">Saludos y despedidas</option>
+        <h1 class="text-center titulo mt-2">¿Que te gustaría escuchar hoy?</h1>
+        <div class="contenedor-form-frases mt-2">
+          <div class="contenedor-img-frases">
+            <img src="../images/imagen-frases.jpeg" alt="Dibujo pensativo" />
+          </div>
+          <div class="contenedor-select">
+            <form action="">
+              <select class="seleccionar" name="Selecciona una categoría">
+                <option value="saludos y despedidas" selected>
+                  Saludos y despedidas
+                </option>
+                <option value="frases en pasado">Frases en pasado</option>
 
-              <option value="viajes">Viajes</option>
-              <option value="frases comunes">Frases comúnes</option>
-            </select>
-          </form>
+                <option value="viajes">Viajes</option>
+                <option value="frases comunes">Frases comúnes</option>
+              </select>
+            </form>
+          </div>
         </div>
       </section>
 
       <section class="seccion-mostrar">
         <p>Has escogido: <span>Saludos y despedidas</span></p>
-        <div class="contenedor-audio">
-          <audio controls>
-            <source
-              src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305308/phrase/audio/hello..._ddrc0b.mp3"
-              type="audio/mp3"
-            />
-            Tu navegador no soporta audio HTML5.
-          </audio>
-        </div>
-        <div class="contenedor-listado">
-          <ul>
-            <li>Hello</li>
-            <li>How are you?</li>
-            <li>I'm very well thank you! and you?</li>
-            <li>See you later!</li>
-            <li>Good morning! How are you today?</li>
-          </ul>
+
+        <div class="contenedor-mostrar">
+          <div class="contenedor-audio">
+            <audio controls>
+              <source
+                src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305308/phrase/audio/hello..._ddrc0b.mp3"
+                type="audio/mp3"
+              />
+              Tu navegador no soporta audio HTML5.
+            </audio>
+          </div>
+          <div class="contenedor-listado">
+            <ul>
+              <li>Hello</li>
+              <li>How are you?</li>
+              <li>I'm very well thank you! and you?</li>
+              <li>See you later!</li>
+              <li>Good morning! How are you today?</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section>
-        <button type="submit">Nueva Frase <i class="fas fa-plus"></i></button>
+        <div class="contenedor-boton">
+          <span> Agregar Frase</span>
+
+          <button type="submit">
+            <i class="fas add fa-plus-circle"></i>
+          </button>
+        </div>
       </section>
     </main>
 

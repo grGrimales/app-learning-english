@@ -3,193 +3,371 @@
   padding: 0;
 }
 
+/*
+20px= 1.25rem
+30px= 1.87rem
+
+*/
 body {
   font-family: "Roboto", sans-serif;
 }
-.contenedor-header {
-  background: #f5f3ef;
-  width: 100%;
-  height: 50%;
-}
 
+/*Generales*/
 img {
   width: 100%;
   height: 100%;
 }
-
-.caja-logo {
-  display: inline-block;
-  width: 250px;
-  height: 250px;
-  margin-left: 39%;
-  margin-top: -40px;
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.87rem;
 }
 
-.nav-principal {
-  display: inline-block;
-  width: 100%;
-
-  background: #f5f3ef;
-  border-top: 0.1rem solid #e1e1e1;
-}
-
-.nav-principal li {
-  display: inline-block;
-  list-style: none;
-  font-size: 15px;
-  padding: 20px;
-  width: 8%;
-  margin-right: 10px;
-  text-align: center;
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+ 
 }
 a {
+  color: #ffffff;
   text-decoration: none;
-  color: black;
 }
+
+li {
+  list-style: none;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"] {
+  
+  background-color: black;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus  {
+  border: 3px solid #38af8d;
+  outline: none;
+}
+/*Utilidades*/
+
+.text-center {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 1.25rem;
+}
+
+/*Header*/
+.contenedor-header {
+  background-color: black;
+}
+.caja-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+}
+
+.nav-principal ul {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+
 li a:hover {
-  border-bottom: 1px solid #12cbf0;
+  border-bottom: 1px solid #ffffff;
   font-weight: bold;
-  color: #0648aa;
+  color: #38af8d;
 }
 
 /*Contenido Principal Home*/
-.contenedor-img {
-  background-image: url(../images/brooklyn-bridge-1791001_1280.jpg);
+.titulo {
+  padding: 1.25rem;
+}
+.img-fondo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 550px;
 }
 
-.contenedor-img-principal {
-  display: inline-block;
-  width: 30%;
-  height: 20%;
-  margin-top: 70px;
-  margin-left: 60px;
-}
 .contenedor-info {
-  display: inline-block;
-  width: 50%;
-  height: 40%;
-  line-height: 53px;
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
   margin-left: 30px;
-  margin-bottom: 10;
+  height: 500px;
+}
+.contenedor-img-principal {
+  height: 80%;
+  width: 50%;
+}
+.contenedor-img-principal img {
+  border-radius: 10px;
 }
 
-.contenedor-info h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  text-align: center;
+.contenedor-texto {
+  display: flex;
+  height: 80%;
+  width: 45%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1.25rem;
 }
-.contenedor-info p {
+.contenedor-texto p {
   text-align: justify;
 }
 
-.parrafo-img {
-  margin-left: 10px;
-  font-weight: lighter;
-  margin-top: 15px;
-}
+/*Contenido frases */
 
-/*Bloque Frases*/
-.contenedor-img-fondo {
-  background-image: url(../images/san-francisco-1802015_1280.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 550px;
-}
-
-.seccion-categorias {
-  /* width: 80%; */
-  height: 40%;
-  margin-top: 30px;
-  margin-left: 28%;
-}
-.contenedor-img-frases {
-  display: inline-block;
-  width: 15%;
-  height: 10%;
-}
-.titulo-frases {
-  display: inline-block;
-  text-align: center;
-}
-.titulo-frases h2 {
-  padding-top: 10px;
-}
 .contenedor-form-frases {
-  /* display: inline-block; */
-  margin-top: 20px;
-}
-select {
-  width: 50%;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
-  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
 }
 
-.seccion-mostrar {
-  width: 100%;
-  height: 50%;
-  margin-top: 40px;
+.contenedor-img-frases {
+  width: 25%;
+  height: 25%;
+}
+
+.contenedor-select {
+  flex-basis: 50%;
+}
+
+.seleccionar {
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  background-color: black;
+  color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  box-sizing: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
 }
 .seccion-mostrar p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.87rem;
+}
+.seccion-mostrar span {
+  color: #38af8d;
+  font-size: 1.56rem;
 }
 
-.contenedor-audio {
-  display: inline-block;
-  margin-left: 25%;
+.contenedor-mostrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1.25rem;
 }
 
 .contenedor-listado {
-  display: inline-block;
-  width: 25%;
-  height: 30%;
-  margin-top: 10px;
   border: 1px solid black;
-  background-color: #808080;
+  height: 50%;
+  background-color: black;
+  color: #ffffff;
 }
 
 .contenedor-listado li {
-  font-family: "Montserrat", sans-serif;
-  list-style: none;
-  font-size: 20px;
-  padding-top: 20px;
-  padding-left: 20px;
-  color: #032c69;
+  padding: 1.25rem;
+  border-bottom: 1px solid #38af8d;
 }
+
+.contenedor-boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-top: 3.125rem;
+}
+.contenedor-boton span {
+  font-size: 1.25rem;
+}
+
+.contenedor-boton button {
+  width: 4.37rem;
+  height: 4.37rem;
+  border-radius: 70%;
+  cursor: pointer;
+  background-color: #168aad;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  margin-left: 0.62rem;
+  margin-right: 0.93rem;
+}
+.contenedor-boton button:hover {
+  background-color: #184e77;
+}
+
+.add {
+  font-size: 1.87rem;
+}
+
+/*historias*/
+
+.cont-columna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.87rem;
+}
+
+.contenedor-form-hist {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.contenedor-repr {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  align-content: space-around;
+}
+.control{
+  align-self: center;
+}
+.btn-reproducir {
+  width: 5%;
+}
+.btn-reproducir{
+  align-self: center;
+  width: 2.5rem;
+  height:  2.5rem;
+  border-radius: 50%;
+  background-color: #38af8d;
+  border: none;
+  cursor: pointer;
+  margin: 1.25rem;
+}
+
+.btn-control{
+  width: 2.5rem;
+  height:  2.5rem;
+  border-radius: 50%;
+  background-color: #34A0A4;
+  border: none;
+  cursor: pointer;
+}
+audio{
+  -webkit-transition:all 0.5s linear;
+  -moz-transition:all 0.5s linear;
+  -o-transition:all 0.5s linear;
+  transition:all 0.5s linear;
+  -moz-box-shadow: 2px 2px 4px 0px #38af8d;
+  -webkit-box-shadow:  2px 2px 4px 0px #38af8d;
+  box-shadow: 2px 2px 4px 0px #38af8d;
+  -moz-border-radius:7px 7px 7px 7px ;
+  -webkit-border-radius:7px 7px 7px 7px ;
+  border-radius:7px 7px 7px 7px ;
+  }
+  
+
+.contenedor-fila{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.contenedor-img-hist {
+  flex-basis: 30%;
+  margin-right: 1.25rem;
+}
+
+.contenedor-info-hist{
+  
+  border: 1px solid black;
+  height:50%;
+  width: 50%;
+  background-color: black;
+  color: #ffffff;
+  margin-top: 1.25rem;
+  overflow-y: scroll;
+  
+  
+}
+.contenedor-info-hist li {
+  padding: 1.25rem;
+  border-bottom: 1px solid #38af8d;
+}
+
+/*Ejercicios*/
+.contenedor-ejercicios a{
+  color: black;
+}
+.contenedor-ejercicios .contenedor-fila{
+  background-color: #52B69A;
+  margin-bottom: 1.25rem;
+  width: 40%;
+  padding: 0.62rem;
+ 
+
+}
+.contenedor-ejercicios img{
+  width: 25%;
+  height: 25%;
+  padding-right: 1.25rem;
+  border-radius:1.25rem;
+}
+
+iframe{
+  border-radius: 4rem;
+}
+
+
 
 /*Footer*/
 
 footer {
-  /* background-color: #ebf4f5; */
-  background-color: #ccc8c0;
+  background-color: black;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 6.25rem;
+  color: #ffffff;
 }
 footer h5 {
   font-family: "Montserrat", sans-serif;
-  padding-top: 10px;
-  font-size: 20px;
+  padding-top: 0.62rem;
+  font-size: 1.25rem;
   text-align: center;
 }
+
 .contenedor-redes {
   margin-left: 40%;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 footer a {
   display: inline-block;
   width: 10%;
   height: 5%;
-  padding-bottom: 10px;
+  padding-bottom: 0.62rem;
 }
 footer p {
   text-align: center;

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Learning English</title>
     <link
       rel="shortcut icon"
-      href="../images/logo/logo.png"
+      href="../images/logo/logo-app.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,125 +15,145 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
 
   <body>
     <header class="contenedor-header">
-      <div>
-        <div class="caja-logo">
-          <img
-            class="logo"
-            src="../images/logo/logo.png"
-            alt="Logo de la aplicación"
-          />
-        </div>
-
-        <nav class="nav-principal">
-          <ul>
-            <li>
-              <a class="enlaces-nav" href="../index.html"> Inicio </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./frases.html"> Frases </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./historias.html"> Historias </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./ejercicios.html"> Ejercicios </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./playlist.html"> Playlist </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./configurar.html"> Configurar </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./contacto.html"> Contacto </a>
-            </li>
-          </ul>
-        </nav>
+      <div class="caja-logo">
+        <img
+          class="logo"
+          src="../images/logo/logo-app.png"
+          alt="Logo de la aplicación"
+        />
       </div>
+
+      <nav class="nav-principal">
+        <ul>
+          <li>
+            <a class="enlaces-nav" href="../index.html"> Inicio </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./frases.html"> Frases </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./historias.html"> Historias </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./ejercicios.html"> Ejercicios </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./playlist.html"> Playlist </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./configurar.html"> Configurar </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./contacto.html"> Contacto </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <h1 class="text-center mt-2">
+        Mejora tu Ingles, escucha sin parar tus actividades
+      </h1>
       <section>
-        <h2>Mejora tu Ingles, escucha sin parar tus actividades</h2>
-        <div>
-          <img
-            src="../images/imagen-historias.png"
-            alt="Persona en otoño escuchando contenido en Ingles"
-            width="250px"
-            height="250px"
-          />
-        </div>
-        <div>
-          <form action="">
-            <label for="numero-conversaciones">Número de conversaciones:</label>
-            <input
-              type="number"
-              name="numero-conversaciones"
-              placeholder="Ej. 5"
-            />
+        <div class="cont-columna">
+          <form action="" class="contenedor-form-hist">
+            <div>
+              <label for="numero-conversaciones"
+                >Número de conversaciones:</label
+              >
+              <input
+                type="number"
+                name="numero-conversaciones"
+                placeholder="Ej. 5"
+              />
 
-            <label for="numero-reproducciones"
-              >Repetir cada conversación:</label
-            >
-            <input
-              type="number"
-              name="numero-reproducciones"
-              placeholder="Ej. 5"
-            />
+              <label for="numero-reproducciones"
+                >Repetir cada conversación:</label
+              >
+              <input
+                type="number"
+                name="numero-reproducciones"
+                placeholder="Ej. 5"
+              />
+            </div>
+          </form>
 
-            <button type="submit">
+          <div class="contenedor-repr">
+            <button class="btn-reproducir" type="submit">
               <i class="fas fa-play-circle"></i>
             </button>
-          </form>
-        </div>
-        <div>
-          <audio controls>
-            <source
-              src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305457/phrase/audio/BREAKFAST_cm1ub1.mp3"
-              type="audio/mp3"
-            />
-            Tu navegador no soporta audio HTML5.
-          </audio>
-          <button type="submit">
-            <i class="fas fa-angle-double-left"></i>
-          </button>
-          <button type="submit">
-            <i class="fas fa-angle-double-right"></i>
-          </button>
-        </div>
-        <div>
-          <ul>
-            <li>BREAKFAST Desayuno</li>
-            <li>What do you have for breakfast? ¿Que tomas para desayunar?</li>
-            <li>
-              From Monday to Friday I only have a coffee and a small piece of
-              toast. De lunes a viernes yo sólo tomo un café y una pequeña
-              tostada.
-            </li>
-            <li>
-              But on Sunday, when I have more time in the morning, I like to
-              have a big breakfast. Pero el domingo, cuando tengo más tiempo por
-              la mañana, me gusta tomar un gran desayuno.
-            </li>
-            <li>
-              I have fresh orange juice, an egg...or maybe two eggs, and two
-              pieces of toast. Tomo zumo de naranja fresco, un huevo ... o tal
-              vez dos huevos, y dos rebanadas de pan tostado.
-            </li>
-            <li>
-              I put tomato and olive oil on my toast. Echo tomate y aceite de
-              oliva en mi tostada.
-            </li>
-            <li>
-              I love Sunday breakfast! ¡Me encanta el desayuno del domingo!
-            </li>
-          </ul>
+            <div class="control">
+              <button class="btn-control" type="submit">
+                <i class="fas fa-angle-double-left"></i>
+              </button>
+              <audio controls>
+                <source
+                  src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305457/phrase/audio/BREAKFAST_cm1ub1.mp3"
+                  type="audio/mp3"
+                />
+                Tu navegador no soporta audio HTML5.
+              </audio>
+
+              <button class="btn-control" type="submit">
+                <i class="fas fa-angle-double-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="contenedor-fila">
+            <div class="contenedor-img-hist">
+              <img
+                src="../images/breakfast.jpg"
+                alt="Persona en otoño escuchando contenido en Ingles"
+                width="250px"
+                height="250px"
+              />
+            </div>
+            <div class="contenedor-info-hist">
+              <ul>
+                <li>BREAKFAST Desayuno</li>
+                <li>
+                  What do you have for breakfast? ¿Que tomas para desayunar?
+                </li>
+                <li>
+                  From Monday to Friday I only have a coffee and a small piece of
+                  toast. De lunes a viernes yo sólo tomo un café y una pequeña
+                  tostada.
+                </li>
+                <li>
+                  But on Sunday, when I have more time in the morning, I like to
+                  have a big breakfast. Pero el domingo, cuando tengo más tiempo
+                  por la mañana, me gusta tomar un gran desayuno.
+                </li>
+                <li>
+                  I have fresh orange juice, an egg...or maybe two eggs, and two
+                  pieces of toast. Tomo zumo de naranja fresco, un huevo ... o tal
+                  vez dos huevos, y dos rebanadas de pan tostado.
+                </li>
+                <li>
+                  I put tomato and olive oil on my toast. Echo tomate y aceite de
+                  oliva en mi tostada.
+                </li>
+                <li>
+                  I love Sunday breakfast! ¡Me encanta el desayuno del domingo!
+                </li>
+              </ul>
+              
+            </div>
+           
+           
+          </div>
+          
         </div>
       </section>
     </main>
