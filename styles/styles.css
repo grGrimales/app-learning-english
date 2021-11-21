@@ -40,22 +40,55 @@ li {
 
 input[type="number"],
 input[type="text"],
-input[type="email"] {
+input[type="email"],textarea {
   
   background-color: black;
   color: #ffffff;
   border-radius: 0.25rem;
   padding: 0.75rem 1.25rem;
   margin: 0.5rem 0;
-  cursor: pointer;
+  font-size: 1rem;
+ 
 }
 
 input[type="number"]:focus,
 input[type="text"]:focus,
-input[type="email"]:focus  {
+input[type="email"]:focus,
+textarea  {
   border: 3px solid #38af8d;
   outline: none;
 }
+
+.contenedor-fila{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.cont-columna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.87rem;
+}
+.btn-regular {
+  background-color: #34A0A4;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-regular:hover {opacity: 1}
 /*Utilidades*/
 
 .text-center {
@@ -227,22 +260,10 @@ select:focus {
 }
 
 /*historias*/
-
-.cont-columna{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.87rem;
-}
-
 .contenedor-form-hist {
   display: flex;
   flex-direction: column;
 }
-
-
-
 
 .contenedor-repr {
   display: flex;
@@ -275,6 +296,7 @@ select:focus {
   border: none;
   cursor: pointer;
 }
+
 audio{
   -webkit-transition:all 0.5s linear;
   -moz-transition:all 0.5s linear;
@@ -288,14 +310,6 @@ audio{
   border-radius:7px 7px 7px 7px ;
   }
   
-
-.contenedor-fila{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: inherit;
-}
-
 .contenedor-img-hist {
   flex-basis: 30%;
   margin-right: 1.25rem;
@@ -341,7 +355,115 @@ iframe{
   border-radius: 4rem;
 }
 
+/*Playlist*/
+.listar{
+  flex-wrap: wrap;
+  height: 50%;
+  justify-content: space-evenly;
+}
+.playlist{
+  height: 80%;
+  width: 30%;
+ 
+}
+.playlist button{
+  font-size: 1.25rem;
+  border-radius: 50%;
+  border: none;  
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: transparent;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+ button .borrar{
+   color: rgb(219, 67, 47);
+ }
+ .playlist button:hover{
+   opacity: 1.5;
+ }
+ 
+ .fa-edit{
+   color: #168AAD;
+ }
 
+ .playlist a{
+   color: black;
+   align-self: flex-end;
+ }
+
+ .imagen-listar{
+   width: 100%;
+   height: 15.62rem;
+ }
+/*Configurar*/
+
+.table-conf {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.table-conf  td, #customers th {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.table-conf  tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-conf  tr:hover {background-color: #ddd;}
+
+.table-conf  th {
+  padding: 1rem;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.table-conf  button{
+font-size: 1.25rem;
+border-radius: 50%;
+border: none;  
+cursor: pointer;
+opacity: 0.8;
+background-color: transparent;
+margin-right: 0.5rem;
+margin-top: 0.5rem;
+}
+ /*Contacto*/
+.contacto{
+ 
+    margin-top: 50px;
+    align-items: center;
+}
+
+.contacto-img{
+  flex-basis: 35%;
+  height: 40%;
+}
+.contacto-img p{
+  text-align: justify;
+  margin-bottom: 1.25rem;
+}
+
+.formulario{
+  flex-basis: 40%;
+ 
+}
+
+.formulario input[type="text"], input[type="text"],
+input[type="email"], textarea{
+  width: 100%;
+}
+
+/* textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+} */
 
 /*Footer*/
 
@@ -351,8 +473,7 @@ footer {
   margin-top: 6.25rem;
   color: #ffffff;
 }
-footer h5 {
-  font-family: "Montserrat", sans-serif;
+footer h2 {
   padding-top: 0.62rem;
   font-size: 1.25rem;
   text-align: center;

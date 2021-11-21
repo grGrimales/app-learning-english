@@ -19,6 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
@@ -61,14 +67,14 @@
     </header>
 
     <main>
-      <section>
-        <h1>Configura tus frases</h1>
-        <h3>
+      <section class="cont-columna">
+        <h1 class="text-center mt-2">Configura tus frases</h1>
+        <h2 class="text-center mt-2">
           Aquí podras conocer el número de reproducciones de tus frases, ver su
           audio e imagen. Ademas podras eliminarlas o editarlas
-        </h3>
+        </h2>
 
-        <table>
+        <table class="table-conf">
           <tr>
             <th>Frase en Ingles</th>
 
@@ -80,7 +86,7 @@
 
             <th>Imagen</th>
 
-            <th></th>
+            <th>Acciones</th>
           </tr>
 
           <tr>
@@ -103,13 +109,12 @@
               <img
                 src="../images/imagen-hello.png"
                 alt="Aprendiendo Ingles"
-                width="100px"
-                height="100px"
+                
               />
             </td>
             <td>
-              <button type="submit"><i class="far fa-times-circle"></i></button>
-              <button type="submit"><i class="far fa-edit"></i></button>
+              <button  type="submit"> <i class="far borrar fa-times-circle borrar"></i> </button>
+              <button type="submit"> <i class="far fa-edit"></i> </button>
             </td>
           </tr>
 
@@ -133,12 +138,11 @@
               <img
                 src="../images/imagen-bye.jpg"
                 alt="Aprendiendo Ingles"
-                width="100px"
-                height="100px"
+               
               />
             </td>
             <td>
-              <button type="submit"><i class="far fa-times-circle"></i></button>
+              <button type="submit"><i class="far fa-times-circle borrar"></i></button>
               <button type="submit"><i class="far fa-edit"></i></button>
             </td>
           </tr>
@@ -163,12 +167,11 @@
               <img
                 src="../images/imagen-saludo.jpg"
                 alt="Aprendiendo Ingles"
-                width="100px"
-                height="100px"
+               
               />
             </td>
             <td>
-              <button type="submit"><i class="far fa-times-circle"></i></button>
+              <button type="submit"><i class="far fa-times-circle borrar"></i></button>
               <button type="submit"><i class="far fa-edit"></i></button>
             </td>
           </tr>
@@ -177,7 +180,8 @@
     </main>
 
     <footer>
-      <h5>Mantente Conectado</h5>
+      <h2 class="text-center">Mantente Conectado</h2>
+
       <div class="contenedor-redes">
         <a href="https://www.facebook.com/">
           <img src="../images/icons/facebook.png" alt="Icon de Facebook" />
