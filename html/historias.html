@@ -6,7 +6,7 @@
     <title>App Learning English</title>
     <link
       rel="shortcut icon"
-      href="../images/logo/logo-app.png"
+      href="../images/logo/favicon.ico"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
 
-  <body>
+  <body id="historias">
     <header class="contenedor-header">
       <div class="caja-logo">
         <img
@@ -35,7 +35,7 @@
       </div>
 
       <nav class="nav-principal">
-        <ul>
+        <ul class="menu">
           <li>
             <a class="enlaces-nav" href="../index.html"> Inicio </a>
           </li>
@@ -67,6 +67,7 @@
       </h1>
       <section>
         <div class="cont-columna">
+          <!--Escoger numero de historias-->
           <form action="" class="contenedor-form-hist">
             <div>
               <label for="numero-conversaciones"
@@ -74,6 +75,7 @@
               >
               <input
                 type="number"
+                id="numero-conversaciones"
                 name="numero-conversaciones"
                 placeholder="Ej. 5"
               />
@@ -83,12 +85,14 @@
               >
               <input
                 type="number"
+                id="numero-reproducciones"
                 name="numero-reproducciones"
                 placeholder="Ej. 5"
               />
             </div>
           </form>
 
+          <!--Mostrar  reproductor-->
           <div class="contenedor-repr">
             <button class="btn-reproducir" type="submit">
               <i class="fas fa-play-circle"></i>
@@ -110,14 +114,16 @@
               </button>
             </div>
           </div>
+
           <div class="contenedor-fila">
             <div class="contenedor-img">
               <img
                 src="../images/breakfast.jpg"
                 alt="Persona en otoño escuchando contenido en Ingles"
-                
               />
             </div>
+
+            <!--Mostrar historia -->
             <div class="contenedor-listado">
               <ul>
                 <li>BREAKFAST Desayuno</li>
@@ -125,9 +131,9 @@
                   What do you have for breakfast? ¿Que tomas para desayunar?
                 </li>
                 <li>
-                  From Monday to Friday I only have a coffee and a small piece of
-                  toast. De lunes a viernes yo sólo tomo un café y una pequeña
-                  tostada.
+                  From Monday to Friday I only have a coffee and a small piece
+                  of toast. De lunes a viernes yo sólo tomo un café y una
+                  pequeña tostada.
                 </li>
                 <li>
                   But on Sunday, when I have more time in the morning, I like to
@@ -136,23 +142,19 @@
                 </li>
                 <li>
                   I have fresh orange juice, an egg...or maybe two eggs, and two
-                  pieces of toast. Tomo zumo de naranja fresco, un huevo ... o tal
-                  vez dos huevos, y dos rebanadas de pan tostado.
+                  pieces of toast. Tomo zumo de naranja fresco, un huevo ... o
+                  tal vez dos huevos, y dos rebanadas de pan tostado.
                 </li>
                 <li>
-                  I put tomato and olive oil on my toast. Echo tomate y aceite de
-                  oliva en mi tostada.
+                  I put tomato and olive oil on my toast. Echo tomate y aceite
+                  de oliva en mi tostada.
                 </li>
                 <li>
                   I love Sunday breakfast! ¡Me encanta el desayuno del domingo!
                 </li>
               </ul>
-              
             </div>
-           
-           
           </div>
-          
         </div>
       </section>
     </main>

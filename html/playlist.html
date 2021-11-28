@@ -6,7 +6,7 @@
     <title>App Learning English</title>
     <link
       rel="shortcut icon"
-      href="../images/logo/logo-app.png"
+      href="../images/logo/favicon.ico"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,15 +16,15 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
 
-  <body>
+  <body id="playlist">
     <header class="contenedor-header">
       <div>
         <div class="caja-logo">
@@ -36,7 +36,7 @@
         </div>
 
         <nav class="nav-principal">
-          <ul>
+          <ul class="menu">
             <li>
               <a class="enlaces-nav" href="../index.html"> Inicio </a>
             </li>
@@ -66,18 +66,28 @@
     <main>
       <section class="cont-columna">
         <h1>Puedes crear una nueva playlist o bien eliminarlas.</h1>
+
         <form action="">
           <label for="agregar-playlist">Nuevo Playlist </label>
-          <input type="text" name="agregar" placeholder="Nuevo Playlist" id="agregar-playlist" />
-          <button class="btn-regular " type="submit">Agregar</button>
+          <input
+            type="text"
+            name="agregar"
+            placeholder="Nuevo Playlist"
+            id="agregar-playlist"
+          />
+          <button class="btn-regular" type="submit">Agregar</button>
         </form>
       </section>
 
       <section class="contenedor-fila listar">
+        <!--Playlist-->
+
         <div class="playlist cont-columna">
           <h2 class="text-center mt-2">Saludos y Despedidas</h2>
           <div>
-            <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+            <button type="submit">
+              <i class="far fa-times-circle borrar"></i>
+            </button>
             <button type="submit"><i class="far fa-edit"></i></button>
           </div>
           <a href="#">Ver mas...</a>
@@ -89,10 +99,14 @@
           </div>
         </div>
 
+        <!--Playlist-->
+
         <div class="playlist cont-columna">
           <h2 class="text-center mt-2">Frases comúnes</h2>
           <div>
-            <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+            <button type="submit">
+              <i class="far fa-times-circle borrar"></i>
+            </button>
             <button type="submit"><i class="far fa-edit"></i></button>
           </div>
           <a href="#">Ver mas...</a>
@@ -100,15 +114,18 @@
             <img
               src="../images/imagen-playlist2.jpg"
               alt="Saludos y despedidas"
-             
             />
           </div>
         </div>
 
+        <!--Playlist-->
+
         <div class="playlist cont-columna">
           <h2 class="text-center mt-2">Oraciones en pasado</h2>
           <div>
-            <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+            <button type="submit">
+              <i class="far fa-times-circle borrar"></i>
+            </button>
             <button type="submit"><i class="far fa-edit"></i></button>
           </div>
 
@@ -117,15 +134,18 @@
             <img
               src="../images/imagen-playlist5.jpg"
               alt="Saludos y despedidas"
-              
             />
           </div>
         </div>
 
+        <!--Playlist-->
+
         <div class="playlist cont-columna">
           <h2 class="text-center mt-2">Comidas</h2>
           <div>
-            <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+            <button type="submit">
+              <i class="far fa-times-circle borrar"></i>
+            </button>
             <button type="submit"><i class="far fa-edit"></i></button>
           </div>
 
@@ -134,15 +154,18 @@
             <img
               src="../images/imagen-playlist4.jpg"
               alt="Saludos y despedidas"
-             
             />
           </div>
         </div>
+        
+        <!--Playlist-->
 
         <div class="playlist cont-columna">
           <h2 class="text-center mt-2">Deportes</h2>
           <div>
-            <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+            <button type="submit">
+              <i class="far fa-times-circle borrar"></i>
+            </button>
             <button type="submit"><i class="far fa-edit"></i></button>
           </div>
 
@@ -151,15 +174,17 @@
             <img
               src="../images/imagen-playlist6.jpg"
               alt="Saludos y despedidas"
-              
             />
           </div>
         </div>
+        <!--Playlist-->
 
         <div class="playlist cont-columna">
           <h2 class="text-center mt-2">Vacaciones</h2>
           <div>
-            <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+            <button type="submit">
+              <i class="far fa-times-circle borrar"></i>
+            </button>
             <button type="submit"><i class="far fa-edit"></i></button>
           </div>
 
@@ -168,7 +193,6 @@
             <img
               src="../images/imagen-playlist3.jpg"
               alt="Saludos y despedidas"
-              
             />
           </div>
         </div>

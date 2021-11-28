@@ -6,7 +6,7 @@
     <title>App Learning English</title>
     <link
       rel="shortcut icon"
-      href="../images/logo/logo-app.png"
+      href="../images/logo/favicon.ico"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
-  <body>
+  <body id="frases">
     <header class="contenedor-header">
       <div>
         <div class="caja-logo">
@@ -35,7 +35,7 @@
         </div>
 
         <nav class="nav-principal">
-          <ul>
+          <ul class="menu">
             <li>
               <a class="enlaces-nav" href="../index.html"> Inicio </a>
             </li>
@@ -63,10 +63,10 @@
     </header>
 
     <main >
-      <h1 class="text-center titulo mt-2">¿Que te gustaría escuchar hoy?</h1>
-      <section class="contenedor-fila ">
+      <section>
+        <h1 class="text-center titulo mt-2">¿Que te gustaría escuchar hoy?</h1>
          
-            <form action="">
+            <form action=""  class="contenedor-fila ">
               <select class="seleccionar mt-2" name="Selecciona una categoría">
                 <option value="saludos y despedidas" selected>
                   Saludos y despedidas
@@ -80,7 +80,8 @@
       </section>
 
       <section class="seccion-mostrar cont-columna">
-        <p>Has escogido: <span>Saludos y despedidas</span></p>
+        <h2>Has escogido: <span>Saludos y despedidas</span></h2>
+        
         <div class="contenedor-audio mt-2">
           <audio controls>
             <source
@@ -91,6 +92,7 @@
           </audio>
 
         </div>
+
         <div class="contenedor-fila">
 
           <div class="mt-2 contenedor-img">
@@ -109,7 +111,8 @@
           
         </div>
       </section>
-      <section>
+
+    
         <div class="contenedor-boton">
           <span> Agregar Frase</span>
 
@@ -117,7 +120,7 @@
             <i class="fas add fa-plus-circle"></i>
           </button>
         </div>
-      </section>
+   
     </main>
 
     <footer>

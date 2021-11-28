@@ -6,7 +6,7 @@
     <title>App Learning English</title>
     <link
       rel="shortcut icon"
-      href="../images/logo/logo-app.png"
+      href="../images/logo/favicon.ico"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
-  <body>
+  <body id="contacto">
     <header class="contenedor-header">
       <div>
         <div class="caja-logo">
@@ -29,7 +29,7 @@
         </div>
 
         <nav class="nav-principal">
-          <ul>
+          <ul class="menu">
             <li>
               <a class="enlaces-nav" href="../index.html"> Inicio </a>
             </li>
@@ -79,6 +79,7 @@
                   <input
                     type="text"
                     name="nombre"
+                    id="nombre"
                     placeholder="Ingrese su nombre"
                   />
         
@@ -88,6 +89,7 @@
                   <input
                     type="email"
                     name="correo"
+                    id="correo"
                     placeholder="ej: lucia@learningenglish.com"
                   />
                 </div>
@@ -97,6 +99,7 @@
                 <input
                   type="text"
                   name="telfono"
+                  id="telefono"
                   placeholder="Ingrese número de contacto"
                 />
               </div>
@@ -106,7 +109,7 @@
               <div>
                 <label for="mensaje">Mensaje</label>
       
-                <textarea name="mensaje" rows="10" cols="30"> </textarea>
+                <textarea name="mensaje" id="mensaje" rows="10" cols="30"> </textarea>
               </div>
                
                 

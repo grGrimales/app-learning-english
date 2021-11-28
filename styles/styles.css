@@ -14,12 +14,10 @@ body {
 
 /*Generales*/
 img {
-  width: 100%;
-  height: 100%;
+width: 100%;
   border-radius: 0.3rem;
 }
 h1 {
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.87rem;
 }
@@ -137,8 +135,19 @@ select:focus   {
 
 .nav-principal ul {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   padding-bottom: 2%;
+}
+
+@media (min-width: 768px) { 
+  .nav-principal ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2%;
+  }
 }
 
 li a:hover {
@@ -146,6 +155,21 @@ li a:hover {
   font-weight: bold;
   color: #38af8d;
 }
+
+body#home ul.menu li:nth-child(1) a,
+body#frases ul.menu li:nth-child(2) a,
+body#historias ul.menu li:nth-child(3) a,
+body#ejercicios ul.menu li:nth-child(4) a ,
+body#playlist ul.menu li:nth-child(5) a,
+body#configurar ul.menu li:nth-child(6) a,
+body#contacto ul.menu li:nth-child(7) a{
+  border-bottom: 1px solid #ffffff;
+  font-weight: bold;
+  color: #38af8d;
+
+ 
+}
+
 
 /*Contenido Principal Home*/
 .titulo {
@@ -342,6 +366,8 @@ iframe{
   
 }
 
+
+
 .playlist button{
   font-size: 1.25rem;
   border-radius: 50%;
@@ -433,17 +459,6 @@ margin-top: 0.5rem;
 input[type="email"], textarea{
   width: 100%;
 }
-
-/* textarea {
-  width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-} */
 
 /*Footer*/
 
