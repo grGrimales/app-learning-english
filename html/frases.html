@@ -24,65 +24,66 @@
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body id="frases">
-    <header class="contenedor-header">
-      <div>
-        <div class="caja-logo">
-          <img
-            class="logo"
-            src="../images/logo/logo-app.png"
-            alt="Logo de la aplicación"
-          />
-        </div>
-
-        <nav class="nav-principal">
-          <ul class="menu">
-            <li>
-              <a class="enlaces-nav" href="../index.html"> Inicio </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./frases.html"> Frases </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./historias.html"> Historias </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./ejercicios.html"> Ejercicios </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./playlist.html"> Playlist </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./configurar.html"> Configurar </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./contacto.html"> Contacto </a>
-            </li>
-          </ul>
-        </nav>
+    <header>
+      <div class="caja-logo">
+        <img
+          class="logo"
+          src="../images/logo/logo-app.png"
+          alt="Logo de la aplicación"
+        />
       </div>
+
+      <nav class="nav-principal">
+        <ul class="menu">
+          <li>
+            <a class="enlaces-nav" href="../index.html"> Inicio </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./frases.html"> Frases </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./historias.html"> Historias </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./ejercicios.html"> Ejercicios </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./playlist.html"> Playlist </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./configurar.html"> Configurar </a>
+          </li>
+          <li>
+            <a class="enlaces-nav" href="./contacto.html"> Contacto </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main >
-      <section>
-        <h1 class="text-center titulo mt-2">¿Que te gustaría escuchar hoy?</h1>
-         
-            <form action=""  class="contenedor-fila ">
-              <select class="seleccionar mt-2" name="Selecciona una categoría">
-                <option value="saludos y despedidas" selected>
-                  Saludos y despedidas
-                </option>
-                <option value="frases en pasado">Frases en pasado</option>
-                <option value="viajes">Viajes</option>
-                <option value="frases comunes">Frases comúnes</option>
-              </select>
-            </form>
-        
-      </section>
+    <main>
 
-      <section class="seccion-mostrar cont-columna">
-        <h2>Has escogido: <span>Saludos y despedidas</span></h2>
+      <section class=" grilla-frases">
+
+        <h1 class="text-center mt-2">¿Que te gustaría escuchar hoy?</h1>
         
-        <div class="contenedor-audio mt-2">
+        <div class="contenedor-select cont-columna">
+          <form action="" class="select">
+            <select class="seleccionar mt-2" name="Selecciona una categoría">
+              <option value="saludos y despedidas" selected>
+                Saludos y despedidas
+              </option>
+              <option value="frases en pasado">Frases en pasado</option>
+              <option value="viajes">Viajes</option>
+              <option value="frases comunes">Frases comúnes</option>
+            </select>
+          </form>
+  
+          <p class="parrafo-frases mt-2">Has escogido: <span>Saludos y despedidas</span></p>
+          
+        </div>
+        
+      
+        <div class="contenedor-audio">
           <audio controls>
             <source
               src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305308/phrase/audio/hello..._ddrc0b.mp3"
@@ -90,15 +91,16 @@
             />
             Tu navegador no soporta audio HTML5.
           </audio>
-
         </div>
 
-        <div class="contenedor-fila">
-
+        
           <div class="mt-2 contenedor-img">
-            <img  src="../images/city-life-6786604_1280.jpg" alt="Conversación">
+            <img
+              src="../images/city-life-6786604_1280.jpg"
+              alt="Conversación"
+            />
           </div>
-         
+
           <div class="contenedor-listado ">
             <ul>
               <li>Hello</li>
@@ -108,23 +110,19 @@
               <li>Good morning! How are you today?</li>
             </ul>
           </div>
-          
-        </div>
+       
+          <div class="contenedor-boton">
+            <span> Agregar Frase</span>
+            <button type="submit">
+              <i class="fas add fa-plus-circle"></i>
+            </button>
+          </div>
       </section>
-
     
-        <div class="contenedor-boton">
-          <span> Agregar Frase</span>
-
-          <button type="submit">
-            <i class="fas add fa-plus-circle"></i>
-          </button>
-        </div>
-   
     </main>
 
     <footer>
-      <h2 class="text-center">Mantente Conectado</h2>
+      <h2 class="text-center mt-2">Mantente Conectado</h2>
 
       <div class="contenedor-redes">
         <a href="https://www.facebook.com/">
@@ -138,7 +136,7 @@
         </a>
       </div>
 
-      <p>Terminos |privacidad | 2021 App Learning English</p>
+      <p>Terminos | privacidad | 2021 App Learning English</p>
     </footer>
   </body>
 </html>
