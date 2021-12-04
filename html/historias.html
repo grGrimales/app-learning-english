@@ -25,7 +25,7 @@
   </head>
 
   <body id="historias">
-    <header >
+    <header>
       <div class="caja-logo">
         <img
           class="logo"
@@ -62,45 +62,50 @@
     </header>
 
     <main>
-      <h1 class="text-center mt-2">
+      <h1 class="text-center mt-2 titulo-historias">
         Mejora tu Ingles, escucha sin parar tus actividades
       </h1>
-      <section>
-        <div class="cont-columna">
-          <!--Escoger numero de historias-->
-          <form action="" class="contenedor-form-hist">
-            <div>
-              <label for="numero-conversaciones"
-                >Número de conversaciones:</label
-              >
-              <input
-                type="number"
-                id="numero-conversaciones"
-                name="numero-conversaciones"
-                placeholder="Ej. 5"
-              />
+      <section class="grilla-historias">
+        <!--Escoger numero de historias-->
+        <form action="" class="contenedor-form-hist mt-2">
+          <div class="form-group">
+            <label for="numero-conversaciones">Número de conversaciones:</label>
+            <input
+              type="number"
+              id="numero-conversaciones"
+              name="numero-conversaciones"
+              placeholder="Ej. 5"
+            />
 
-              <label for="numero-reproducciones"
-                >Repetir cada conversación:</label
-              >
-              <input
-                type="number"
-                id="numero-reproducciones"
-                name="numero-reproducciones"
-                placeholder="Ej. 5"
-              />
-            </div>
-          </form>
+          </div>
+          <div class="form-group">
+            <label for="numero-reproducciones"
+              >Repetir cada conversación:</label
+            >
+            <input
+              type="number"
+              id="numero-reproducciones"
+              name="numero-reproducciones"
+              placeholder="Ej. 5"
+            />
 
-          <!--Mostrar  reproductor-->
-          <div class="contenedor-repr">
-            <button class="btn-reproducir" type="submit">
-              <i class="fas fa-play-circle"></i>
-            </button>
-            <div class="control">
-              <button class="btn-control" type="submit">
-                <i class="fas fa-angle-double-left"></i>
-              </button>
+          </div>
+        </form>
+
+        <!--Mostrar  reproductor-->
+        <div class="contenedor-repr">
+          <div class="contenedor-botones">
+          <button class="btn-control double-left" type="submit">
+            <i class="fas fa-angle-double-left"></i>
+          </button>
+          <button class="btn-reproducir" type="submit">
+            <i class="fas fa-play-circle"></i>
+          </button>
+          <button class="btn-control double-right" type="submit">
+            <i class="fas fa-angle-double-right"></i>
+          </button>
+        </div>
+            
               <audio controls>
                 <source
                   src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305457/phrase/audio/BREAKFAST_cm1ub1.mp3"
@@ -108,52 +113,49 @@
                 />
                 Tu navegador no soporta audio HTML5.
               </audio>
+  
+          
+        </div>
 
-              <button class="btn-control" type="submit">
-                <i class="fas fa-angle-double-right"></i>
-              </button>
-            </div>
+         <!--Contenedor historia-->
+        <div class="contenedor-historia mt-2">
+          <div class="contenedor-img">
+            <img
+              src="../images/breakfast.jpg"
+              alt="Persona en otoño escuchando contenido en Ingles"
+            />
           </div>
 
-          <div class="contenedor-fila">
-            <div class="contenedor-img">
-              <img
-                src="../images/breakfast.jpg"
-                alt="Persona en otoño escuchando contenido en Ingles"
-              />
-            </div>
-
-            <!--Mostrar historia -->
-            <div class="contenedor-listado">
-              <ul>
-                <li>BREAKFAST Desayuno</li>
-                <li>
-                  What do you have for breakfast? ¿Que tomas para desayunar?
-                </li>
-                <li>
-                  From Monday to Friday I only have a coffee and a small piece
-                  of toast. De lunes a viernes yo sólo tomo un café y una
-                  pequeña tostada.
-                </li>
-                <li>
-                  But on Sunday, when I have more time in the morning, I like to
-                  have a big breakfast. Pero el domingo, cuando tengo más tiempo
-                  por la mañana, me gusta tomar un gran desayuno.
-                </li>
-                <li>
-                  I have fresh orange juice, an egg...or maybe two eggs, and two
-                  pieces of toast. Tomo zumo de naranja fresco, un huevo ... o
-                  tal vez dos huevos, y dos rebanadas de pan tostado.
-                </li>
-                <li>
-                  I put tomato and olive oil on my toast. Echo tomate y aceite
-                  de oliva en mi tostada.
-                </li>
-                <li>
-                  I love Sunday breakfast! ¡Me encanta el desayuno del domingo!
-                </li>
-              </ul>
-            </div>
+          <!--Mostrar historia -->
+          <div class="contenedor-listado">
+            <ul>
+              <li>BREAKFAST Desayuno</li>
+              <li>
+                What do you have for breakfast? ¿Que tomas para desayunar?
+              </li>
+              <li>
+                From Monday to Friday I only have a coffee and a small piece of
+                toast. De lunes a viernes yo sólo tomo un café y una pequeña
+                tostada.
+              </li>
+              <li>
+                But on Sunday, when I have more time in the morning, I like to
+                have a big breakfast. Pero el domingo, cuando tengo más tiempo
+                por la mañana, me gusta tomar un gran desayuno.
+              </li>
+              <li>
+                I have fresh orange juice, an egg...or maybe two eggs, and two
+                pieces of toast. Tomo zumo de naranja fresco, un huevo ... o tal
+                vez dos huevos, y dos rebanadas de pan tostado.
+              </li>
+              <li>
+                I put tomato and olive oil on my toast. Echo tomate y aceite de
+                oliva en mi tostada.
+              </li>
+              <li>
+                I love Sunday breakfast! ¡Me encanta el desayuno del domingo!
+              </li>
+            </ul>
           </div>
         </div>
       </section>
