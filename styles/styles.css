@@ -765,21 +765,25 @@ background-color: rgba(0, 0, 0, .3);
 
 /*Contacto*/
 .contacto {
-  margin-top: 50px;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  padding: 1rem;
+  margin-bottom: 5rem;
+ 
 }
 
 .contacto-img {
-  flex-basis: 35%;
-  height: 40%;
+  height: 64%;
 }
+
 .contacto-img p {
   text-align: justify;
   margin-bottom: 1.25rem;
 }
 
-.formulario {
-  flex-basis: 40%;
+
+.formulario .cont-columna{
+  align-items: stretch;
 }
 
 .formulario input[type="text"],
@@ -788,7 +792,26 @@ input[type="email"],
 textarea {
   width: 100%;
 }
-
+@media (min-width: 768px) { 
+  .contacto {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    justify-items: center;
+    
+  }
+  
+  .contacto-img {
+    width: 80%;
+    margin-top: 2rem;
+  }
+  .contacto-img p {
+    text-align: justify;
+    margin-bottom: 1.25rem;
+  }
+  
+ 
+}
 /*Footer*/
 
 footer {
