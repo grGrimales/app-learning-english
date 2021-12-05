@@ -62,6 +62,11 @@ textarea {
   font-size: 1rem;
 }
 
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+}
+
 input[type="number"]:focus,
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -457,9 +462,6 @@ main {
   padding-right: 1.5rem;
 }
 
-input[type="number"] {
-  width: 100%;
-}
 
 .contenedor-repr {
   grid-area: reproduccion;
@@ -569,7 +571,7 @@ audio {
 }
 
 /*Ejercicios*/
-.contenedor-ejercicios{
+.contenedor-ejercicios {
   height: 34.37rem;
 }
 
@@ -598,11 +600,10 @@ iframe {
 }
 
 @media (min-width: 768px) {
-
-  .contenedor-ejercicios{
+  .contenedor-ejercicios {
     height: 100%;
   }
-  
+
   .contenedor-ejercicios .contenedor-fila {
     margin-bottom: 1.25rem;
     width: 40%;
@@ -623,14 +624,16 @@ iframe {
 
 /*Playlist*/
 .listar {
-  flex-wrap: wrap;
-  height: 50%;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+
 }
-.playlist {
-  height: 80%;
-  width: 30%;
+
+.playlist{
+  margin: 0 1rem;
 }
+
 
 .playlist button {
   font-size: 1.25rem;
@@ -642,20 +645,29 @@ iframe {
   margin-right: 0.5rem;
   margin-top: 0.5rem;
 }
+
 button .borrar {
   color: rgb(219, 67, 47);
 }
+
 .playlist button:hover {
-  opacity: 1.5;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2,1.2)
+ 
 }
 
 .fa-edit {
   color: #168aad;
 }
 
+
 .playlist a {
   color: black;
   align-self: flex-end;
+}
+
+.playlist a:hover {
+  color: rgb(21, 21, 230);
 }
 
 .imagen-listar {
@@ -664,6 +676,22 @@ button .borrar {
 }
 .imagen-listar img {
   border-radius: 0;
+}
+@media (min-width: 600px) { 
+  .listar {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   }
+}
+
+@media (min-width: 992px) {
+  .listar {
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+  }
+  
+
+
 }
 /*Configurar*/
 
@@ -754,6 +782,11 @@ footer h2 {
 .contenedor-redes img {
   width: 80%;
   height: 80%;
+}
+
+.contenedor-redes img:hover{
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2,1.2)
 }
 
 footer p {
