@@ -28,176 +28,181 @@
     <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body id="configurar">
-    <header class="contenedor-header">
-      <div>
-        <div class="caja-logo">
-          <img
-            class="logo"
-            src="../images/logo/logo-app.png"
-            alt="Logo de la aplicación"
-          />
-        </div>
+    
+   
+        <header class="contenedor-header">
+          <div>
+            <div class="caja-logo">
+              <img
+                class="logo"
+                src="../images/logo/logo-app.png"
+                alt="Logo de la aplicación"
+              />
+            </div>
+    
+            <nav class="nav-principal">
+              <ul class="menu">
+                <li>
+                  <a class="enlaces-nav" href="../index.html"> Inicio </a>
+                </li>
+                <li>
+                  <a class="enlaces-nav" href="./frases.html"> Frases </a>
+                </li>
+                <li>
+                  <a class="enlaces-nav" href="./historias.html"> Historias </a>
+                </li>
+                <li>
+                  <a class="enlaces-nav" href="./ejercicios.html"> Ejercicios </a>
+                </li>
+                <li>
+                  <a class="enlaces-nav" href="./playlist.html"> Playlist </a>
+                </li>
+                <li>
+                  <a class="enlaces-nav" href="./configurar.html"> Configurar </a>
+                </li>
+                <li>
+                  <a class="enlaces-nav" href="./contacto.html"> Contacto </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+    
+        <main>
+          <section class="cont-columna seccion-conf">
+            <h1 class="text-center mt-2">Configura tus frases</h1>
+            <p class="text-center mt-2 parrafo-conf">
+              Aquí podras conocer el número de reproducciones de tus frases, ver su
+              audio e imagen. Ademas podras eliminarlas o editarlas
+            </p>
+    
+            <div class="contenedor-table">
+              <table class="table-conf">
+                <tr>
+                  <th>Frase en Ingles</th>
+      
+                  <th>Frase en Español</th>
+      
+                  <th>Reproducciones</th>
+      
+                  <th>Audio</th>
+      
+                  <th>Imagen</th>
+      
+                  <th>Acciones</th>
+                </tr>
+      
+                <tr>
+                  <td>Hello</td>
+      
+                  <td>Hola</td>
+                  <td>2</td>
+      
+                  <td>
+                    <audio controls>
+                      <source
+                        src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305522/phrase/audio/hello_jbfxag.mp3"
+                        type="audio/mp3"
+                      />
+                      Tu navegador no soporta audio HTML5.
+                    </audio>
+                  </td>
+      
+                  <td>
+                    <img
+                      src="../images/imagen-hello.png"
+                      alt="Aprendiendo Ingles"
+                      
+                    />
+                  </td>
+                  <td>
+                    <button  type="submit"> <i class="far borrar fa-times-circle borrar"></i> </button>
+                    <button type="submit"> <i class="far fa-edit"></i> </button>
+                  </td>
+                </tr>
+      
+                <tr>
+                  <td>Goodbye</td>
+      
+                  <td>Adios</td>
+                  <td>2</td>
+      
+                  <td>
+                    <audio controls>
+                      <source
+                        src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305899/phrase/audio/good_bye_kc4nha.mp3"
+                        type="audio/mp3"
+                      />
+                      Tu navegador no soporta audio HTML5.
+                    </audio>
+                  </td>
+      
+                  <td>
+                    <img
+                      src="../images/imagen-bye.jpg"
+                      alt="Aprendiendo Ingles"
+                     
+                    />
+                  </td>
+                  <td>
+                    <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+                    <button type="submit"><i class="far fa-edit"></i></button>
+                  </td>
+                </tr>
+      
+                <tr>
+                  <td>How are you?</td>
+      
+                  <td>¿Como estas tú?</td>
+                  <td>2</td>
+      
+                  <td>
+                    <audio controls>
+                      <source
+                        src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305918/phrase/audio/How_are_you_qwsqdf.mp3"
+                        type="audio/mp3"
+                      />
+                      Tu navegador no soporta audio HTML5.
+                    </audio>
+                  </td>
+      
+                  <td>
+                    <img
+                      src="../images/imagen-saludo.jpg"
+                      alt="Aprendiendo Ingles"
+                     
+                    />
+                  </td>
+                  <td>
+                    <button type="submit"><i class="far fa-times-circle borrar"></i></button>
+                    <button type="submit"><i class="far fa-edit"></i></button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+           
+          </section>
+        </main>
+    
+        <footer>
+          <h2 class="text-center">Mantente Conectado</h2>
+    
+          <div class="contenedor-redes">
+            <a href="https://www.facebook.com/">
+              <img src="../images/icons/facebook.png" alt="Icon de Facebook" />
+            </a>
+            <a href="https://www.youtube.com/">
+              <img src="../images/icons/youtube.png" alt="Icon de Youtube" />
+            </a>
+            <a href="https://twitter.com/?lang=es">
+              <img src="../images/icons/twitter.png" alt="Icon de Twitter" />
+            </a>
+          </div>
+    
+          <p>Terminos |privacidad | 2021 App Learning English</p>
+        </footer>
 
-        <nav class="nav-principal">
-          <ul class="menu">
-            <li>
-              <a class="enlaces-nav" href="../index.html"> Inicio </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./frases.html"> Frases </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./historias.html"> Historias </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./ejercicios.html"> Ejercicios </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./playlist.html"> Playlist </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./configurar.html"> Configurar </a>
-            </li>
-            <li>
-              <a class="enlaces-nav" href="./contacto.html"> Contacto </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="cont-columna">
-        <h1 class="text-center mt-2">Configura tus frases</h1>
-        <p class="text-center mt-2 parrafo-conf">
-          Aquí podras conocer el número de reproducciones de tus frases, ver su
-          audio e imagen. Ademas podras eliminarlas o editarlas
-        </p>
-
-        <div class="contenedor-table">
-          <table class="table-conf">
-            <tr>
-              <th>Frase en Ingles</th>
-  
-              <th>Frase en Español</th>
-  
-              <th>Reproducciones</th>
-  
-              <th>Audio</th>
-  
-              <th>Imagen</th>
-  
-              <th>Acciones</th>
-            </tr>
-  
-            <tr>
-              <td>Hello</td>
-  
-              <td>Hola</td>
-              <td>2</td>
-  
-              <td>
-                <audio controls>
-                  <source
-                    src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305522/phrase/audio/hello_jbfxag.mp3"
-                    type="audio/mp3"
-                  />
-                  Tu navegador no soporta audio HTML5.
-                </audio>
-              </td>
-  
-              <td>
-                <img
-                  src="../images/imagen-hello.png"
-                  alt="Aprendiendo Ingles"
-                  
-                />
-              </td>
-              <td>
-                <button  type="submit"> <i class="far borrar fa-times-circle borrar"></i> </button>
-                <button type="submit"> <i class="far fa-edit"></i> </button>
-              </td>
-            </tr>
-  
-            <tr>
-              <td>Goodbye</td>
-  
-              <td>Adios</td>
-              <td>2</td>
-  
-              <td>
-                <audio controls>
-                  <source
-                    src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305899/phrase/audio/good_bye_kc4nha.mp3"
-                    type="audio/mp3"
-                  />
-                  Tu navegador no soporta audio HTML5.
-                </audio>
-              </td>
-  
-              <td>
-                <img
-                  src="../images/imagen-bye.jpg"
-                  alt="Aprendiendo Ingles"
-                 
-                />
-              </td>
-              <td>
-                <button type="submit"><i class="far fa-times-circle borrar"></i></button>
-                <button type="submit"><i class="far fa-edit"></i></button>
-              </td>
-            </tr>
-  
-            <tr>
-              <td>How are you?</td>
-  
-              <td>¿Como estas tú?</td>
-              <td>2</td>
-  
-              <td>
-                <audio controls>
-                  <source
-                    src="https://res.cloudinary.com/dvmpfgqrs/video/upload/v1636305918/phrase/audio/How_are_you_qwsqdf.mp3"
-                    type="audio/mp3"
-                  />
-                  Tu navegador no soporta audio HTML5.
-                </audio>
-              </td>
-  
-              <td>
-                <img
-                  src="../images/imagen-saludo.jpg"
-                  alt="Aprendiendo Ingles"
-                 
-                />
-              </td>
-              <td>
-                <button type="submit"><i class="far fa-times-circle borrar"></i></button>
-                <button type="submit"><i class="far fa-edit"></i></button>
-              </td>
-            </tr>
-          </table>
-        </div>
-       
-      </section>
-    </main>
-
-    <footer>
-      <h2 class="text-center">Mantente Conectado</h2>
-
-      <div class="contenedor-redes">
-        <a href="https://www.facebook.com/">
-          <img src="../images/icons/facebook.png" alt="Icon de Facebook" />
-        </a>
-        <a href="https://www.youtube.com/">
-          <img src="../images/icons/youtube.png" alt="Icon de Youtube" />
-        </a>
-        <a href="https://twitter.com/?lang=es">
-          <img src="../images/icons/twitter.png" alt="Icon de Twitter" />
-        </a>
-      </div>
-
-      <p>Terminos |privacidad | 2021 App Learning English</p>
-    </footer>
-  </body>
+      
+    </body>
+ 
 </html>

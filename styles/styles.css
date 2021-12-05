@@ -693,6 +693,11 @@ button .borrar {
 
 }
 /*Configurar*/
+.seccion-conf{
+  height: 30rem;
+  justify-content: start;
+}
+
 .parrafo-conf{
   padding: 1rem;
 }
@@ -751,6 +756,11 @@ background-color: rgba(0, 0, 0, .3);
 .table-conf button:hover{
   transition: all 0.3s ease-in-out;
   transform: scale(1.2,1.2)
+}
+@media (min-width: 768px) { 
+  .seccion-conf{
+    height: 50rem;
+  }
 }
 
 /*Contacto*/
