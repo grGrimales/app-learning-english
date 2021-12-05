@@ -80,10 +80,10 @@ select:focus {
   background-color: #34a0a4;
   border: none;
   color: white;
-  padding: 10px 24px;
+  padding: 0.62rem 1.5rem;
   text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 1rem;
+  margin: 0.25rem 0.12rem;
   opacity: 0.6;
   transition: 0.3s;
   display: inline-block;
@@ -710,8 +710,8 @@ button .borrar {
 .contenedor-table::-webkit-scrollbar
 {
 -webkit-appearance: none;
-width: 14px;
-height: 14px;
+width: 0.87rem;
+height: 0.87rem;
 }
 
 
@@ -767,6 +767,7 @@ background-color: rgba(0, 0, 0, .3);
 .contacto {
   display: grid;
   grid-template-rows: 0.5fr 1fr;
+  gap: 1rem;
   padding: 1rem;
   margin-bottom: 5rem;
  
@@ -792,6 +793,14 @@ input[type="email"],
 textarea {
   width: 100%;
 }
+@media (min-width: 600px) { 
+  .contacto{
+    gap: 0;
+  }
+  .contacto-img {
+    height: 73%;
+  }
+}
 @media (min-width: 768px) { 
   .contacto {
     grid-template-columns: repeat(2, 1fr);
@@ -803,6 +812,7 @@ textarea {
   
   .contacto-img {
     width: 80%;
+    height: 64%;
     margin-top: 2rem;
   }
   .contacto-img p {
