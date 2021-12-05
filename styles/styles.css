@@ -767,7 +767,7 @@ background-color: rgba(0, 0, 0, .3);
 .contacto {
   display: grid;
   grid-template-rows: 0.5fr 1fr;
-  gap: 1rem;
+  gap: 3rem;
   padding: 1rem;
   margin-bottom: 5rem;
  
@@ -775,6 +775,10 @@ background-color: rgba(0, 0, 0, .3);
 
 .contacto-img {
   height: 64%;
+}
+
+.formulario{
+  margin-top: 4rem;
 }
 
 .contacto-img p {
@@ -793,14 +797,21 @@ input[type="email"],
 textarea {
   width: 100%;
 }
+
 @media (min-width: 600px) { 
   .contacto{
     gap: 0;
   }
   .contacto-img {
     height: 73%;
+    margin-bottom: 0;
   }
+
+.formulario{
+  margin-top: 0;
 }
+}
+
 @media (min-width: 768px) { 
   .contacto {
     grid-template-columns: repeat(2, 1fr);
