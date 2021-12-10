@@ -132,6 +132,10 @@ header {
   background-color: black;
   grid-area: header;
 }
+header .bg-dark {
+  --bs-bg-opacity: 0;
+}
+
 .caja-logo {
   display: flex;
   flex-direction: column;
@@ -178,7 +182,7 @@ body#contacto ul.menu li:nth-child(7) a {
 }
 
 /*Contenido Principal Home*/
-.container {
+.container-home {
   width: 100%;
   display: grid;
   height: 100rem;
@@ -457,7 +461,7 @@ iframe {
 
 .playlist {
   margin: 1rem 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .playlist button {
@@ -608,6 +612,9 @@ footer {
   flex-direction: column;
   justify-content: space-around;
 }
+ footer .bg-dark{
+  --bs-bg-opacity: 0;
+}
 footer h2 {
   padding-top: 0.62rem;
   font-size: 1.25rem;
@@ -632,7 +639,6 @@ footer h2 {
 
 footer p {
   text-align: center;
-  padding-bottom: 1rem;
 }
 
 /*MEDIA QUERY*/
@@ -798,7 +804,7 @@ footer p {
     width: 40rem;
     height: 22.5rem;
   }
-  
+
   /*Configurar*/
   .seccion-conf {
     height: 50rem;
