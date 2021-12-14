@@ -639,38 +639,13 @@ footer p {
 /*MEDIA QUERY*/
 
 
-@media screen and (max-width: 600px) {
-  .topnav li {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-    padding: 1rem;
-  }
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive li {
-    float: none;
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 
 @media (min-width: 600px) {
  
   
   /*Contenido frases */
-  li a:hover {
-    border-bottom: 1px solid #ffffff;
-    
-  }
+
   .grilla-frases {
     padding: 1.25rem;
     height: 60rem;
@@ -736,35 +711,27 @@ footer p {
   }
 
   /*Header*/
-  
-
-   .menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  
-  li a:hover {
-    font-weight: bold;
-    color: #38af8d;
-  }
-  .nav-principal ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .nav-principal li a {
-    font-size: 1rem;
-  }
 
   .logo {
     width: 20%;
     height: 20%;
   }
 
+  .nav-principal ul {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    align-items: center;
+
+  }
+  .nav-principal li a {
+    font-size: 1rem;
+  }
+  li a:hover {
+    font-weight: bold;
+    color: #38af8d;
+  }
+ 
   /*Contenido Principal Home*/
   .img-fondo {
     height: 34.37rem;
