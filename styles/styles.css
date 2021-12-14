@@ -128,6 +128,7 @@ select:focus {
 }
 
 /*Header*/
+
 header {
   background-color: black;
   grid-area: header;
@@ -469,6 +470,7 @@ iframe {
   background-color: transparent;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 button .borrar {
@@ -476,7 +478,6 @@ button .borrar {
 }
 
 .playlist button:hover {
-  transition: all 0.3s ease-in-out;
   transform: scale(1.2, 1.2);
 }
 
@@ -557,10 +558,10 @@ th {
   background-color: transparent;
   margin-right: 0.5rem;
   margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .table-conf button:hover {
-  transition: all 0.3s ease-in-out;
   transform: scale(1.2, 1.2);
 }
 
@@ -623,10 +624,10 @@ footer h2 {
 .contenedor-redes img {
   width: 80%;
   height: 80%;
+  transition: all 0.3s ease-in-out;
 }
 
 .contenedor-redes img:hover {
-  transition: all 0.3s ease-in-out;
   transform: scale(1.2, 1.2);
 }
 
@@ -637,8 +638,39 @@ footer p {
 
 /*MEDIA QUERY*/
 
+
+@media screen and (max-width: 600px) {
+  .topnav li {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    padding: 1rem;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 600px) {
+ 
+  
   /*Contenido frases */
+  li a:hover {
+    border-bottom: 1px solid #ffffff;
+    
+  }
   .grilla-frases {
     padding: 1.25rem;
     height: 60rem;
@@ -704,6 +736,22 @@ footer p {
   }
 
   /*Header*/
+  
+
+   .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  
+  li a:hover {
+    font-weight: bold;
+    color: #38af8d;
+  }
   .nav-principal ul {
     flex-direction: row;
     justify-content: space-around;
@@ -798,7 +846,7 @@ footer p {
     width: 40rem;
     height: 22.5rem;
   }
-  
+
   /*Configurar*/
   .seccion-conf {
     height: 50rem;
