@@ -621,10 +621,12 @@ footer h2 {
   padding: 0.5rem;
 }
 
-.contenedor-redes img {
+
+.contenedor-redes img{
   width: 80%;
   height: 80%;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .contenedor-redes img:hover {
@@ -633,7 +635,8 @@ footer h2 {
 
 footer p {
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
 }
 
 /*MEDIA QUERY*/
