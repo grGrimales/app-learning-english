@@ -133,7 +133,13 @@ header {
   background-color: black;
   grid-area: header;
 }
+
+header .bg-dark {
+  background-color: black;
+}
+
 .caja-logo {
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,42 +150,29 @@ header {
   height: 40%;
 }
 
-.nav-principal ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 0.5rem;
-}
-
-.nav-principal li a {
+.nav-link {
+  color: #fff;
   font-size: 1.25rem;
 }
 
-.nav-principal li {
-  padding-bottom: 0.5rem;
-}
-
-li a:hover {
-  border-bottom: 1px solid #ffffff;
-  font-weight: bold;
+li .nav-link:hover {
   color: #38af8d;
+  transition: all 0.3s ease-in-out;
 }
 
-body#home ul.menu li:nth-child(1) a,
+
+body#home ul.menu li:nth-child(1) .nav-link,
 body#frases ul.menu li:nth-child(2) a,
 body#historias ul.menu li:nth-child(3) a,
 body#ejercicios ul.menu li:nth-child(4) a,
 body#playlist ul.menu li:nth-child(5) a,
 body#configurar ul.menu li:nth-child(6) a,
 body#contacto ul.menu li:nth-child(7) a {
-  border-bottom: 1px solid #ffffff;
-  font-weight: bold;
   color: #38af8d;
 }
 
 /*Contenido Principal Home*/
-.container {
+.container-home {
   width: 100%;
   display: grid;
   height: 100rem;
@@ -638,12 +631,7 @@ footer p {
 
 /*MEDIA QUERY*/
 
-
-
-
 @media (min-width: 600px) {
- 
-  
   /*Contenido frases */
 
   .grilla-frases {
@@ -717,21 +705,11 @@ footer p {
     height: 20%;
   }
 
-  .nav-principal ul {
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 0.5rem;
-    align-items: center;
+ .container-home .titulo {
+    margin-top: 2rem;
+  }
 
-  }
-  .nav-principal li a {
-    font-size: 1rem;
-  }
-  li a:hover {
-    font-weight: bold;
-    color: #38af8d;
-  }
- 
+
   /*Contenido Principal Home*/
   .img-fondo {
     height: 34.37rem;
@@ -839,6 +817,25 @@ footer p {
 }
 
 @media (min-width: 992px) {
+  ul .nav-item {
+    margin-left: 3rem;
+  }
+
+  li .nav-link:hover {
+    border-bottom: 1px solid #fff;
+  }
+
+  body#home ul.menu li:nth-child(1) .nav-link,
+body#frases ul.menu li:nth-child(2) a,
+body#historias ul.menu li:nth-child(3) a,
+body#ejercicios ul.menu li:nth-child(4) a,
+body#playlist ul.menu li:nth-child(5) a,
+body#configurar ul.menu li:nth-child(6) a,
+body#contacto ul.menu li:nth-child(7) a {
+  color: #38af8d;
+  border-bottom: 1px solid #fff;
+  
+}
   /*Contenido Principal Home*/
   .contenedor-info {
     flex-direction: row;
@@ -864,11 +861,23 @@ footer p {
 }
 
 @media (min-width: 1100px) {
+  ul .nav-item {
+    margin-left: 4rem;
+  }
+
+ 
+
   /*Contenido frases */
   .listado .contenedor-img {
     flex-basis: 30%;
   }
   .contenedor-boton {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1345px) {
+  ul .nav-item {
+    margin-left: 6rem;
   }
 }
