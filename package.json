@@ -1,0 +1,26 @@
+{
+  "name": "app-learning-english",
+  "version": "1.0.0",
+  "description": "Aplicacion de ingles",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/home.scss css/home.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/grGrimales/app-learning-english.git"
+  },
+  "author": "Grediana Rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grGrimales/app-learning-english/issues"
+  },
+  "homepage": "https://github.com/grGrimales/app-learning-english#readme"
+}

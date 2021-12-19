@@ -106,6 +106,7 @@ select:focus {
   background-color: black;
   color: #ffffff;
 }
+
 .contenedor-listado li {
   width: 100%;
   padding: 1.25rem;
@@ -702,8 +703,10 @@ footer p {
   }
 }
 
-/*Generales*/
+
 @media (min-width: 768px) {
+
+  /*Generales*/
   h1 {
     font-size: 2rem;
   }
