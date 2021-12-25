@@ -1,24 +1,25 @@
 @import "generales";
 @import "header";
 @import "footer";
+@import "mixins";
 
 main {
   .titulo {
     padding: 1.25rem;
 
-    @media (min-width: 768px) {
+    @include telefono {
       margin-top: 2rem;
     }
   }
 
-  
   .img-fondo {
     height: 14.06rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 0;
-    @media (min-width: 768px) {
+
+    @include telefono {
       height: 34.37rem;
     }
   }
@@ -26,13 +27,13 @@ main {
 
 section {
   .contenedor-info {
-    display: flex;
-    flex-direction: column;
+    @extend .contenedor;
     margin-top: 1.25rem;
     align-items: center;
     margin: 1rem;
     height: 100%;
-    @media (min-width: 992px) {
+
+    @include large {
       flex-direction: row;
       margin-top: 1.25rem;
       justify-content: space-between;
@@ -45,24 +46,22 @@ section {
     height: 80%;
     width: 90%;
 
-    @media (min-width: 992px) {
+    @include large {
       height: 80%;
       width: 50%;
     }
   }
 
   .contenedor-texto {
+    @extend .contenedor;
     height: 70%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     padding: 1.25rem;
 
-    @media (min-width: 768px) {
+    @include telefono {
       width: 100%;
     }
-
-    @media (min-width: 992px) {
+    @include large {
       height: 80%;
       width: 45%;
     }

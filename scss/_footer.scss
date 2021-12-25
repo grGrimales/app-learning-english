@@ -1,9 +1,9 @@
-$color-principal: black;
-$color-letra: #ffffff;
+@import "variables";
+
 
 footer {
   grid-area: footer;
-  background-color: $color-principal;
+  background-color:$color-principal;
   margin-top: 3rem;
   color: $color-letra;
   display: flex;

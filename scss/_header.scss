@@ -1,7 +1,5 @@
-$color-principal: black;
-$color-secundario: #38af8d;
-$color-btn: #34a0a4;
-$color-letra: #ffffff;
+@import "variables";
+@import "mixins";
 
 
 header {
@@ -20,7 +18,7 @@ header {
       width: 40%;
       height: 40%;
 
-      @media (min-width: 768px) {
+      @include telefono{
         width: 20%;
         height: 20%;
       }
@@ -29,16 +27,24 @@ header {
 }
 
 ul {
+  
   .nav-item {
-    @media (min-width: 992px) {
+
+    @include large{
       margin-left: 3rem;
     }
-    @media (min-width: 1100px) {
+    
+
+
+    @include xl{
       margin-left: 4rem;
     }
-    @media (min-width: 1345px) {
+  
+
+    @include xxl{
       margin-left: 6rem;
     }
+   
   }
 }
 
@@ -61,9 +67,11 @@ ul {
 body#home ul.menu li:nth-child(1) .nav-link {
   color: #38af8d;
 
-  @media (min-width: 992px) {
+  @include large{
     border-bottom: 1px solid $color-letra;
   }
+
+  
 }
 
 

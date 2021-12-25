@@ -91,12 +91,6 @@ select:focus {
 }
 /*Utilidades*/
 
-.text-center {
-  text-align: center;
-}
-.mt-2 {
-  margin-top: 1.25rem;
-}
 
 .contenedor-listado {
   border: 1px solid black;
@@ -310,6 +304,8 @@ main {
 }
 .contenedor-boton span {
   font-size: 1.25rem;
+  color: #ffffff;
+
 }
 
 .contenedor-boton button {
