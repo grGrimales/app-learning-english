@@ -83,10 +83,12 @@ header {
     .nav-link:hover {
       border-bottom: 1px solid #ffffff; } }
 
-body#home ul.menu li:nth-child(1) .nav-link {
+body#home ul.menu li:nth-child(1) .nav-link,
+body#frases ul.menu li:nth-child(2) a {
   color: #38af8d; }
   @media (min-width: 992px) {
-    body#home ul.menu li:nth-child(1) .nav-link {
+    body#home ul.menu li:nth-child(1) .nav-link,
+    body#frases ul.menu li:nth-child(2) a {
       border-bottom: 1px solid #ffffff; } }
 
 /*Colores*/
@@ -98,6 +100,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media (min-width: 768px) {
+    footer {
+      margin-top: 8rem; } }
   footer h2 {
     padding-top: 0.62rem;
     font-size: 1.25rem;
@@ -116,6 +121,148 @@ footer {
       transition: all 0.3s ease-in-out; }
       footer .contenedor-redes img:hover {
         transform: scale(1.2, 1.2); }
+
+/*Colores*/
+.grilla-frases {
+  display: grid;
+  height: 70rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  grid-template: "titulo titulo" 0.5fr "select select" 1fr "audio  audio" 0.5fr "listado listado" 2fr "boton boton" 1fr / 1fr 1fr;
+  row-gap: 1rem; }
+  @media (min-width: 600px) {
+    .grilla-frases {
+      padding: 1.25rem;
+      height: 60rem;
+      grid-template: "titulo titulo" 0.5fr "select select" 1fr "audio  audio" 1fr "listado  listado" 1fr ". boton" 0.5fr / 1fr 1fr; } }
+  .grilla-frases h1 {
+    grid-area: titulo; }
+  .grilla-frases .contenedor-img {
+    grid-area: imagen;
+    width: 100%;
+    padding: 1rem; }
+  @media (min-width: 600px) {
+    .grilla-frases .contenedor-listado {
+      height: 100%; } }
+
+.contenedor-select {
+  grid-area: select;
+  margin-top: 0; }
+  .contenedor-select .seleccionar {
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    box-sizing: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; }
+  .contenedor-select .parrafo-frases {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.87rem; }
+  .contenedor-select .parrafo-frases span {
+    color: #38af8d;
+    font-size: 1.56rem;
+    font-weight: bold; }
+
+.contenedor-audio {
+  grid-area: audio;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.listado {
+  grid-area: listado;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; }
+  @media (min-width: 768px) {
+    .listado {
+      flex-direction: row;
+      justify-content: space-around; } }
+  @media (min-width: 600px) {
+    .listado .contenedor-listado {
+      width: 100%;
+      height: 8rem;
+      overflow-y: scroll; } }
+  @media (min-width: 768px) {
+    .listado .contenedor-listado {
+      height: 25rem;
+      width: 50%; } }
+  .listado ul {
+    padding-left: 0; }
+  @media (min-width: 600px) {
+    .listado .contenedor-img {
+      height: 10%;
+      width: 80%; } }
+  @media (min-width: 768px) {
+    .listado .contenedor-img {
+      flex-basis: 47%; } }
+  @media (min-width: 1100px) {
+    .listado .contenedor-img {
+      flex-basis: 38%; } }
+
+.contenedor-boton {
+  grid-area: boton;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-right: 1rem; }
+  @media (min-width: 1100px) {
+    .contenedor-boton {
+      margin-top: 0; } }
+  .contenedor-boton span {
+    font-size: 1.25rem;
+    color: #ffffff; }
+  .contenedor-boton button {
+    width: 4.37rem;
+    height: 4.37rem;
+    border-radius: 70%;
+    cursor: pointer;
+    background-color: #168aad;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    margin-left: 1rem; }
+    .contenedor-boton button:hover {
+      background-color: #184e77; }
+  .contenedor-boton .add {
+    font-size: 1.87rem; }
+
+/*Colores*/
+.contenedor-listado {
+  border: 1px solid black;
+  height: 100%;
+  width: 94%;
+  margin-top: 1.25rem;
+  background-color: black;
+  color: #ffffff; }
+
+.contenedor-listado li {
+  width: 100%;
+  padding: 1.25rem;
+  border-bottom: 1px solid #38af8d; }
+
+.contenedor-fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit; }
+
+.cont-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.87rem; }
 
 main .titulo {
   padding: 1.25rem; }

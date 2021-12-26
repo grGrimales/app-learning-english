@@ -1,0 +1,168 @@
+@import "../variables";
+@import "../mixins";
+
+.grilla-frases {
+  display: grid;
+  height: 70rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  grid-template:
+    "titulo titulo" 0.5fr
+    "select select" 1fr
+    "audio  audio" 0.5fr
+    "listado listado" 2fr
+    "boton boton" 1fr / 1fr 1fr;
+  row-gap: 1rem;
+
+  @include small {
+    padding: 1.25rem;
+    height: 60rem;
+    grid-template:
+      "titulo titulo" 0.5fr
+      "select select" 1fr
+      "audio  audio" 1fr
+      "listado  listado" 1fr
+      ". boton" 0.5fr / 1fr 1fr;
+  }
+
+  h1 {
+    grid-area: titulo;
+  }
+
+  .contenedor-img {
+    grid-area: imagen;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .contenedor-listado {
+    @include small {
+      height: 100%;
+    }
+  }
+}
+
+.contenedor-select {
+  grid-area: select;
+  margin-top: 0;
+
+  .seleccionar {
+    font-family: $tipografia-secundaria;
+    background-color: $color-principal;
+    color: $color-letra;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    box-sizing: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .parrafo-frases {
+    font-family: $tipografia-secundaria;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.87rem;
+  }
+  .parrafo-frases span {
+    color: $color-secundario;
+    font-size: 1.56rem;
+    font-weight: bold;
+  }
+}
+
+.contenedor-audio {
+  grid-area: audio;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.listado {
+  grid-area: listado;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+
+  @include telefono{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+   .contenedor-listado {
+    @include small {
+        width: 100%;
+        height: 8rem;
+        overflow-y: scroll;
+      }
+
+      @include telefono{
+        height: 25rem;
+        width: 50%;
+      }
+    
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .contenedor-img {
+    @include small {
+      height: 10%;
+      width: 80%;
+    }
+
+    @include telefono{
+        flex-basis: 47%;
+    }
+
+    @include xl{
+        flex-basis: 38%;
+    }
+  }
+}
+
+.contenedor-boton {
+  grid-area: boton;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-right: 1rem;
+
+  @include xl{
+    margin-top: 0;
+  }
+
+  span {
+    font-size: 1.25rem;
+    color: $color-letra;
+  }
+
+  button {
+    width: 4.37rem;
+    height: 4.37rem;
+    border-radius: 70%;
+    cursor: pointer;
+    background-color: $color-btn-frases;
+    font-weight: bold;
+    color: $color-letra;
+    border: none;
+    margin-left: 1rem;
+
+    &:hover {
+      background-color: $color-btn-hover;
+    }
+  }
+  .add {
+    font-size: 1.87rem;
+  }
+}
+
+

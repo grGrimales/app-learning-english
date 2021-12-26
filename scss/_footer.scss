@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixins";
 
 footer {
   grid-area: footer;
@@ -9,6 +9,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @include telefono{
+      margin-top: 8rem;
+  }
 
   h2 {
     padding-top: 0.62rem;
