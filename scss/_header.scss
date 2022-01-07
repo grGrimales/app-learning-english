@@ -66,7 +66,11 @@ ul {
 
 body#home ul.menu li:nth-child(1) .nav-link,
 body#frases ul.menu li:nth-child(2) a,
-body#historias ul.menu li:nth-child(3) a {
+body#historias ul.menu li:nth-child(3) a,
+body#ejercicios ul.menu li:nth-child(4) a,
+body#playlist ul.menu li:nth-child(5) a,
+body#configurar ul.menu li:nth-child(6) a,
+body#contacto ul.menu li:nth-child(7) a {
   color: #38af8d;
 
   @include large{

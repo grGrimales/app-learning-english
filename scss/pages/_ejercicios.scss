@@ -1,0 +1,52 @@
+@import "../variables";
+@import "../mixins";
+
+.contenedor-ejercicios {
+  height: 34.37rem;
+  @include telefono {
+    height: 100%;
+  }
+
+  a {
+    color: $color-principal;
+  }
+
+  .contenedor-fila {
+    background-color: $color-div;
+    margin-bottom: 1.25rem;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    @include telefono {
+      margin-bottom: 1.25rem;
+      width: 40%;
+      padding: 0.62rem;
+    }
+  }
+
+  img {
+    width: 25%;
+    height: 100%;
+    padding-right: 1.25rem;
+
+    @include telefono {
+        width: 25%;
+        height: 25%;
+        padding-right: 1.25rem;
+      }
+  }
+}
+
+iframe {
+  border-radius: 1rem;
+  width: 20rem;
+  height: 11rem;
+  margin: 2rem;
+
+
+  @include telefono {
+    width: 40rem;
+    height: 22.5rem;
+  }
+}
