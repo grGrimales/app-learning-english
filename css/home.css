@@ -1,5 +1,4 @@
 /*Colores*/
-/*Colores*/
 html {
   box-sizing: border-box; }
 
@@ -44,6 +43,29 @@ nav li {
   display: flex;
   flex-direction: column; }
 
+input[type="number"],
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: black;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  font-size: 1rem; }
+
+input[type="number"],
+input[type="text"] {
+  width: 100%; }
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border: 3px solid #38af8d;
+  outline: none; }
+
 /*Colores*/
 header {
   background-color: black; }
@@ -84,11 +106,13 @@ header {
       border-bottom: 1px solid #ffffff; } }
 
 body#home ul.menu li:nth-child(1) .nav-link,
-body#frases ul.menu li:nth-child(2) a {
+body#frases ul.menu li:nth-child(2) a,
+body#historias ul.menu li:nth-child(3) a {
   color: #38af8d; }
   @media (min-width: 992px) {
     body#home ul.menu li:nth-child(1) .nav-link,
-    body#frases ul.menu li:nth-child(2) a {
+    body#frases ul.menu li:nth-child(2) a,
+    body#historias ul.menu li:nth-child(3) a {
       border-bottom: 1px solid #ffffff; } }
 
 /*Colores*/
@@ -236,6 +260,108 @@ footer {
       background-color: #184e77; }
   .contenedor-boton .add {
     font-size: 1.87rem; }
+
+/*Colores*/
+.titulo-historias {
+  padding: 0 1rem; }
+
+.grilla-historias {
+  display: grid;
+  height: 60rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  grid-template: "select select" 2fr "reproduccion reproduccion" 0.5fr "listado listado" 3fr / 1fr 1fr; }
+  @media (min-width: 768px) {
+    .grilla-historias {
+      height: 52rem; } }
+  .grilla-historias .contenedor-form-hist {
+    grid-area: select;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .grilla-historias .contenedor-form-hist {
+        grid-area: select;
+        display: flex;
+        flex-direction: row; } }
+    .grilla-historias .contenedor-form-hist .form-group {
+      padding-left: 2rem;
+      padding-right: 1.5rem; }
+  .grilla-historias .contenedor-repr {
+    grid-area: reproduccion;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .grilla-historias .contenedor-repr .contenedor-botones {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly; }
+      @media (min-width: 768px) {
+        .grilla-historias .contenedor-repr .contenedor-botones {
+          width: 42%; } }
+      .grilla-historias .contenedor-repr .contenedor-botones .btn-reproducir {
+        grid-area: reproducir;
+        width: 5%;
+        align-self: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: #38af8d;
+        border: none;
+        cursor: pointer;
+        margin: 1.25rem; }
+      .grilla-historias .contenedor-repr .contenedor-botones .btn-control {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: #34a0a4;
+        border: none;
+        cursor: pointer;
+        align-self: center; }
+
+audio {
+  -moz-box-shadow: 2px 2px 4px 0px #38af8d;
+  -webkit-box-shadow: 2px 2px 4px 0px #38af8d;
+  box-shadow: 2px 2px 4px 0px #38af8d;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px; }
+
+.contenedor-historia {
+  grid-area: listado;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; }
+  @media (min-width: 768px) {
+    .contenedor-historia {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      margin-bottom: 8rem; } }
+  @media (min-width: 600px) {
+    .contenedor-historia .contenedor-img {
+      height: 10%;
+      width: 80%; } }
+  @media (min-width: 768px) {
+    .contenedor-historia .contenedor-img {
+      flex-basis: 33%; } }
+  .contenedor-historia .contenedor-listado {
+    width: 100%;
+    height: 12.5rem;
+    overflow-y: scroll; }
+    @media (min-width: 600px) {
+      .contenedor-historia .contenedor-listado {
+        width: 100%;
+        height: 8rem; } }
+    @media (min-width: 768px) {
+      .contenedor-historia .contenedor-listado {
+        width: 50%;
+        height: 25rem; } }
+  .contenedor-historia ul {
+    padding-left: 0; }
 
 /*Colores*/
 .contenedor-listado {

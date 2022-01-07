@@ -65,7 +65,8 @@ ul {
 }
 
 body#home ul.menu li:nth-child(1) .nav-link,
-body#frases ul.menu li:nth-child(2) a {
+body#frases ul.menu li:nth-child(2) a,
+body#historias ul.menu li:nth-child(3) a {
   color: #38af8d;
 
   @include large{
