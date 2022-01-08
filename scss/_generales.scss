@@ -2,11 +2,7 @@
 @import "variables";
 @import "mixins";
 
-/*Colores*/
-$color-principal: black;
-$color-secundario: #38af8d;
-$color-btn: #34a0a4;
-$color-letra: #ffffff;
+
 
 html {
     box-sizing: border-box;
@@ -70,3 +66,48 @@ img {
     display: flex;
     flex-direction: column;
   }
+
+  input[type="number"],
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: $color-principal;
+  color: $color-letra;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  border: 3px solid $color-secundario;
+  outline: none;
+}
+.btn-regular {
+  background-color: #34a0a4;
+  border: none;
+  color: white;
+  padding: 0.62rem 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.25rem 0.12rem;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+

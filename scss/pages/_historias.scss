@@ -1,0 +1,133 @@
+@import "../variables";
+@import "../mixins";
+
+.titulo-historias {
+  padding: 0 1rem;
+}
+
+.grilla-historias {
+  display: grid;
+  height: 60rem;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  grid-template:
+    "select select" 2fr
+    "reproduccion reproduccion" 0.5fr
+    "listado listado" 3fr / 1fr 1fr;
+
+    @include telefono{
+        height: 52rem;
+      }
+
+  .contenedor-form-hist {
+    grid-area: select;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include telefono{
+        grid-area: select;
+        display: flex;
+        flex-direction: row;
+      }
+
+    .form-group {
+      padding-left: 2rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .contenedor-repr {
+    grid-area: reproduccion;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .contenedor-botones {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      @include telefono{
+        width: 42%;
+      }
+
+
+.btn-reproducir {
+    grid-area: reproducir;
+    width: 5%;
+    align-self: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color:$color-secundario;
+    border: none;
+    cursor: pointer;
+    margin: 1.25rem;
+  }
+  
+  .btn-control {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color:$color-btn;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+  }
+    }
+  }
+}
+audio {
+    -moz-box-shadow: 2px 2px 4px 0px $color-secundario;
+    -webkit-box-shadow: 2px 2px 4px 0px $color-secundario;
+    box-shadow: 2px 2px 4px 0px $color-secundario;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
+  }
+
+  .contenedor-historia {
+    grid-area: listado;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    @include telefono{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin-bottom: 8rem;
+      }
+    .contenedor-img{
+        @include small {
+            height: 10%;
+            width: 80%;
+          }
+
+          @include telefono{
+            flex-basis: 33%;
+          }
+    }
+
+    .contenedor-listado {
+        width: 100%;
+        height: 12.5rem;
+        overflow-y: scroll;
+
+        @include small {
+            width: 100%;
+            height: 8rem;
+          }
+
+          @include telefono{
+            width: 50%;
+            height: 25rem;
+          }
+      }
+
+      ul{
+        padding-left: 0;
+      }
+  }
+  
