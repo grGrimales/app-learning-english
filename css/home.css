@@ -66,6 +66,22 @@ select:focus {
   border: 3px solid #38af8d;
   outline: none; }
 
+.btn-regular {
+  background-color: #34a0a4;
+  border: none;
+  color: white;
+  padding: 0.62rem 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.25rem 0.12rem;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer; }
+  .btn-regular:hover {
+    opacity: 1; }
+
 /*Colores*/
 header {
   background-color: black; }
@@ -409,6 +425,141 @@ iframe {
     iframe {
       width: 40rem;
       height: 22.5rem; } }
+
+/*Colores*/
+.listar {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem; }
+  @media (min-width: 600px) {
+    .listar {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr); } }
+  @media (min-width: 992px) {
+    .listar {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr); } }
+  .listar .playlist {
+    margin: 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+    .listar .playlist button {
+      font-size: 1.25rem;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      background-color: transparent;
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+      transition: all 0.3s ease-in-out; }
+      .listar .playlist button .borrar {
+        color: #db432f; }
+        .listar .playlist button .borrar:hover {
+          transform: scale(1.2, 1.2); }
+    .listar .playlist a {
+      color: black;
+      align-self: flex-end; }
+      .listar .playlist a:hover {
+        color: #1515e6; }
+
+.fa-edit {
+  color: #168aad; }
+
+.imagen-listar {
+  width: 100%;
+  height: 15.62rem; }
+  .imagen-listar img {
+    border-radius: 0; }
+
+.seccion-conf {
+  height: 30rem;
+  justify-content: start; }
+  @media (min-width: 768px) {
+    .seccion-conf {
+      height: 50rem; } }
+  .seccion-conf .parrafo-conf {
+    padding: 1rem; }
+
+.contenedor-table {
+  width: 85%;
+  overflow-y: auto; }
+  .contenedor-table::w-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0.87rem;
+    height: 0.87rem; }
+  .contenedor-table::webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, 0.3); }
+
+.table-conf td,
+.table-conf th {
+  border: 1px solid #ddd;
+  padding: 1rem; }
+
+.table-conf tr:nth-child(even) {
+  background-color: #f2f2f2; }
+  .table-conf tr:nth-child(even):hover {
+    background-color: #ddd; }
+
+.table-conf button {
+  font-size: 1.25rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: transparent;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out; }
+  .table-conf button:hover {
+    transform: scale(1.2, 1.2); }
+
+/*Colores*/
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 1rem;
+  margin-bottom: 5rem; }
+  @media (min-width: 600px) {
+    .contacto {
+      gap: 0; } }
+  @media (min-width: 768px) {
+    .contacto {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 50px;
+      justify-items: center; } }
+  .contacto .contacto-img {
+    height: 64%; }
+    @media (min-width: 600px) {
+      .contacto .contacto-img {
+        height: 73%;
+        margin-bottom: 0; } }
+    @media (min-width: 768px) {
+      .contacto .contacto-img {
+        width: 80%;
+        height: 64%;
+        margin-top: 2rem; } }
+    .contacto .contacto-img p {
+      text-align: justify;
+      margin-bottom: 1.25rem; }
+      @media (min-width: 768px) {
+        .contacto .contacto-img p {
+          text-align: justify;
+          margin-bottom: 1.25rem; } }
+  .contacto .formulario {
+    margin-top: 4rem; }
+    @media (min-width: 600px) {
+      .contacto .formulario {
+        margin-top: 0; } }
+    .contacto .formulario .cont-columna {
+      align-items: stretch; }
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="text"],
+    .contacto .formulario input[type="email"],
+    .contacto .formulario textarea {
+      width: 100%; }
 
 /*Colores*/
 .contenedor-listado {

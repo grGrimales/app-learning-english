@@ -1,0 +1,63 @@
+@import "../variables";
+@import "../mixins";
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+
+  @include small {
+    gap: 0;
+  }
+
+  @include telefono {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    justify-items: center;
+  }
+  .contacto-img {
+    height: 64%;
+
+    @include small {
+      height: 73%;
+      margin-bottom: 0;
+    }
+
+    @include telefono {
+      width: 80%;
+      height: 64%;
+      margin-top: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.25rem;
+
+      @include telefono {
+        text-align: justify;
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+
+  .formulario {
+    margin-top: 4rem;
+
+    @include small {
+      margin-top: 0;
+    }
+
+    .cont-columna {
+      align-items: stretch;
+    }
+
+    input[type="text"],
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+    }
+  }
+}
