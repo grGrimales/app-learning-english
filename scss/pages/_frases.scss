@@ -142,7 +142,7 @@
 
   span {
     font-size: 1.25rem;
-    color: $color-letra;
+    color: $color-principal;
   }
 
   button {
@@ -150,18 +150,18 @@
     height: 4.37rem;
     border-radius: 70%;
     cursor: pointer;
-    background-color: $color-btn-frases;
-    font-weight: bold;
+    background-color: #34a0a4;;
     color: $color-letra;
     border: none;
     margin-left: 1rem;
-
+    opacity: 0.6;
     &:hover {
-      background-color: $color-btn-hover;
+      opacity: 1;
     }
   }
   .add {
-    font-size: 1.87rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
 }
 

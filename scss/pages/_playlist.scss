@@ -53,6 +53,10 @@
 
   .fa-edit {
     color: #168aad;
+
+    &:hover{
+      transform: scale(1.2, 1.2);
+  }
   }
 
   .imagen-listar {

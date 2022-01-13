@@ -143,7 +143,7 @@ body#contacto ul.menu li:nth-child(7) a {
 footer {
   grid-area: footer;
   background-color: black;
-  margin-top: 3rem;
+  margin-top: 5rem;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -165,7 +165,6 @@ footer {
     padding: 0.5rem; }
     footer .contenedor-redes img {
       width: 80%;
-      height: 80%;
       transition: all 0.3s ease-in-out; }
       footer .contenedor-redes img:hover {
         transform: scale(1.2, 1.2); }
@@ -269,21 +268,22 @@ footer {
       margin-top: 0; } }
   .contenedor-boton span {
     font-size: 1.25rem;
-    color: #ffffff; }
+    color: black; }
   .contenedor-boton button {
     width: 4.37rem;
     height: 4.37rem;
     border-radius: 70%;
     cursor: pointer;
-    background-color: #168aad;
-    font-weight: bold;
+    background-color: #34a0a4;
     color: #ffffff;
     border: none;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    opacity: 0.6; }
     .contenedor-boton button:hover {
-      background-color: #184e77; }
+      opacity: 1; }
   .contenedor-boton .add {
-    font-size: 1.87rem; }
+    font-size: 1.6rem;
+    text-align: center; }
 
 /*Colores*/
 .titulo-historias {
@@ -464,6 +464,8 @@ iframe {
 
 .fa-edit {
   color: #168aad; }
+  .fa-edit:hover {
+    transform: scale(1.2, 1.2); }
 
 .imagen-listar {
   width: 100%;
